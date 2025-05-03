@@ -10,7 +10,7 @@ devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 
-template = cv2.imread(r'D:\Projects\Ipl Ad Mute\images\ipl_logo.jpg',0)
+template = cv2.imread(r'D:\Projects\Ipl Ad Mute\ipl_logo.jpg',0)
 if template is None:
     print("Error Logo not found")
     exit()
